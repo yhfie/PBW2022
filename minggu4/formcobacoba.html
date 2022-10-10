@@ -1,0 +1,73 @@
+<!--Coba coba type checkbox-->
+<html>
+    <head>
+        <title>Latihan Form HTML</title>
+    </head>
+    <body align="center" style="font-family:Roboto, font-size:30;">
+        <h1>Form Biodata Mahasiswa</h1>
+        <hr> <br>
+        <form action="proses.php" name="fmhs" method="post">
+            <table cellpadding="10" align="center" border="0">
+                <tr>
+                    <td>Nama*</td>
+                    <td><input type="text" name="fnama" placeholder="--Masukkan Nama Panjang--" size="25" required></td>
+                </tr>
+                <tr>
+                    <td>Nomor Induk Mahasiswa*</td>
+                    <td><input type="number" name="fnim" placeholder="--Masukkan NIM--" size="30" required></td>
+                </tr>
+                <tr>
+                    <td>Jenis Kelamin*</td>
+                    <td>
+                        <input type="radio" name="fgender" value="laki">
+                        <label for="fgender">Laki-laki</label><br>
+                        <input type="radio" name="fgender" value="perempuan">
+                        <label for="fgener">Perempuan</label><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Tanggal Lahir*</td>
+                    <td><input type="date" name="ftanggal" required></td>
+                </tr>
+                <tr>
+                    <td>Program Studi*</td>
+                    <td>
+                        <select name="fprodi" required>
+                            <option value="" readonly>--Pilih Program Studi--</option>
+                            <option value="a11">S1 Teknik Informatika</option>
+                            <option value="a12">S1 Sistem Informasi</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Bidang Minat*</td>
+                    <td>
+                        <input type="checkbox" name="fminat1" value="WebDev">
+                        <label for="fminat1">Web Developer</label><br>
+                        <input type="checkbox" name="fminat2" value="MobDev">
+                        <label for="fminat2">Mobile Developer</label><br>
+                        <input type="checkbox" name="fminat2" value="DataSc">
+                        <label for="fminat2">Data Science</label><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Lampiran Sertifikat*</td>
+                    <td><input type="file" name="fsertif"></td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="center">
+                        <input type="checkbox" name="frules" value="rules">
+                        <label for="frules">Saya berjanji akan menaati segala peraturan yang berlaku.</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="center">*: Wajib diisi</td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="center"><input type="reset"> <input type="submit" name="fsubmit" value="Kirim"></td>
+                </tr>
+            </table>
+            
+        </form>
+    </body>
+</html>

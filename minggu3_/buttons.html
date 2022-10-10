@@ -1,0 +1,96 @@
+<html>
+    <head>
+        <title>Multimedia HTML5 (Video)</title>
+    </head>
+    <body style="text-align:center;">
+        <h1>Multimedia HTML5 (Video)</h1>
+        <hr>
+        <h2>Buttons Menggunakan Icon/Gambar</h2>
+
+        <!--Buttons-->
+        <button onclick="playVid()" type="button">
+            <img src="media/playbutton.png" alt="" width="20">
+        </button>
+        <button onclick="pauseVid()" type="button">
+            <img src="media/pausebutton.png" alt="" width="18">
+        </button>
+        <button onclick="durationVid()" type="button">
+            <img src="media/clock.png" alt="" width="18">
+        </button>
+        <button onclick="controlsOn()" type="button">
+            <img src="media/show.png" alt="" width="20">
+        </button>
+        <button onclick="controlsOff()" type="button">
+            <img src="media/hide.png" alt="" width="25">
+        </button>
+        <button onclick="loopOn()" type="button">
+            <img src="media/loop.png" alt="" width="20">
+        </button>
+        <button onclick="loopOff()" type="button">
+            <img src="media/offloop.png" alt="" width="20">
+        </button>
+        <button onclick="muteOn()" type="button">
+            <img src="media/mute.png" alt="" width="20">
+        </button>
+        <button onclick="muteOff()" type="button">
+            <img src="media/unmute.png" alt="" width="20">
+        </button>
+        <button onclick="loopInfo()" type="button">Loop Info</button>
+        <br>
+        <br>
+
+        <!--Video-->
+        <video id="timelapse" width="540" controls>
+            <source src="media/timelapseNYC.mp4" type="video/mp4">
+            <source src="media/timelapseNYC.mp4" type="video/ogg">
+            Browser anda tidak mendukung video ini.
+        </video>
+
+        <!--Properties-->
+        <script>
+            var vid = document.getElementById("timelapse");
+
+            function playVid() {
+                vid.play();
+            }
+
+            function pauseVid() {
+                vid.pause();
+            }
+
+            function durationVid() {
+                alert(vid.duration);
+            }
+
+            function controlsOn() {
+                vid.controls = true;
+            }
+
+            function controlsOff() {
+                vid.controls = false;
+            }
+
+            function loopOn() {
+                vid.loop = true;
+            }
+
+            function loopOff() {
+                vid.loop = false;
+            }
+
+            function muteOn() {
+                vid.muted = true;
+            }
+
+            function muteOff() {
+                vid.muted = false;
+            }
+
+            function loopInfo() {
+                alert(vid.loop);
+            }
+
+        </script>
+
+    </body>
+</html>
