@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Website</title>
+    <link rel="shortcut icon" href="media/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="media/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav style="text-align: center;">
+        <a href="index.html">Home</a>  |
+        <a href="media/CV.pdf" target="_blank">CV</a>  |
+        <a href="contacts.html">Contacts</a>  |
+        <a href="about.html">About me</a>  |
+    </nav>
+
+    <header style="text-align: center;">
+        <img src="media/forweb1x1.png" alt="My Picture" width="200" style="border-radius: 50%;" title="Huwaida Rahman Yafie">
+        <h1>Huwaida Rahman Yafie</h1>
+        <p>Mahasiswa S1 Teknik Informatika UDINUS</p>
+    </header>
+    <hr>
+
+    <article style="text-align: center;">
+        <h2>About Me</h2>
+        <p>Halo! Saya adalah mahasiswa yang sedang belajar Web Programming.</p>
+        <p>Saya memang masih semester 1 dan masih belajar. Oleh karena itu saya akan terus belajar dan mendapatkan pengetahuan sebanyak-banyaknya.</p>
+        <p>Untuk saat ini saya masih mempelajari HTML, CSS. Saya tidak sabar untuk mempelajari dan mengeksplor yang lain.</p>
+        <p>Ingin tahu sedikit lebih banyak? Simak video singkat berikut!</p>
+    </article>
+
+    <div class="video">
+        <video id="aboutme" width="480" controls>
+            <source src="media/aboutme.mp4" type="video/mp4">
+            <source src="media/aboutme.mp4" type="video/ogg">
+            Video is not supported
+        </video>
+
+        <!--Buttons-->
+        <br><br>
+        <button onclick="playVid()" type="button" title="Play">
+            <img class="tombol" src="media/playbutton.png" alt="" width="30">
+        </button>
+        <button onclick="pauseVid()" type="button" title="Pause">
+            <img class="tombol" src="media/pausebutton.png" alt="" width="30">
+        </button>
+        <button onclick="controlsOn()" type="button" title="Show Controls">
+            <img class="tombol" src="media/show.png" alt="" width="30">
+        </button>
+        <button onclick="controlsOff()" type="button" title="Hide Controls">
+            <img class="tombol" src="media/hide.png" alt="" width="30">
+        </button>
+        <button onclick="loopOn()" type="button" title="Loop">
+            <img class="tombol" src="media/loop.png" alt="" width="30">
+        </button>
+        <button onclick="loopOff()" type="button" title="Disable Loop">
+            <img class="tombol" src="media/offloop.png" alt="" width="30">
+        </button>
+        <button onclick="muteOn()" type="button" title="Mute">
+            <img class="tombol" src="media/mute.png" alt="" width="30">
+        </button>
+        <button onclick="muteOff()" type="button" title="Unmute">
+            <img class="tombol" src="media/unmute.png" alt="" width="30">
+        </button>
+        <br>
+        <br>
+
+        <!--Properties-->
+        <script>
+            var vid = document.getElementById("aboutme");
+
+            function playVid() {
+                vid.play();
+            }
+
+            function pauseVid() {
+                vid.pause();
+            }
+
+            function controlsOn() {
+                vid.controls = true;
+            }
+
+            function controlsOff() {
+                vid.controls = false;
+            }
+
+            function loopOn() {
+                vid.loop = true;
+            }
+
+            function loopOff() {
+                vid.loop = false;
+            }
+
+            function muteOn() {
+                vid.muted = true;
+            }
+
+            function muteOff() {
+                vid.muted = false;
+            }
+        </script>
+    </div>
+    <hr>
+    <footer style="text-align: center;">
+        <p>Copyright &copy; 2022 Huwaida Rahman Yafie</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,41 @@
+body {
+    margin: 5% 15%;
+    background-color: rgb(207, 207, 207);
+    font-family: Arial, Helvetica, sans-serif
+}
+nav {
+    padding: 30px;
+    background-color: white;
+}
+header {
+    background-color: white;
+    padding: 30px 30px 10px 30px;
+}
+article {
+    background-color: white;
+    padding: 10px 30px 30px 30px;
+}
+.video {
+    text-align: center;
+    background-color: white;
+    padding: 10px;
+}
+.table {
+    background-color: white;
+    text-align: center;
+}
+.kontak{
+    background-color: white;
+}
+.socials{
+    background-color: white;
+}
+button {
+    border-radius: 50%;
+}
+.tombol {
+    border-radius: 50%;
+}
+#aboutme {
+    border-radius: 1%;
+}
