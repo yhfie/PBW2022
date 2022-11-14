@@ -1,0 +1,13 @@
+.textin{
+    font-size: 24px;
+}
+input[type=text]{
+    background: none;
+    color: darkblue;
+    padding: 10px;
+    border: 3px solid darkgreen;
+}
+input[placeholder]{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: red;
+}

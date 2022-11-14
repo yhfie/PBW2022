@@ -1,0 +1,110 @@
+body {
+    background-color: antiquewhite;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.container {
+    margin: auto;
+    border-radius: 10px;
+    width: 960px;
+    background-color: white;
+}
+header {
+    text-align: center;
+    padding: 5px;
+    font-size: 28px;
+}
+nav {
+    text-align: center;
+    background-color: brown;
+    padding: 5px;
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+nav ul li {
+    font-size: 18px;
+    display: inline-block;
+}
+nav a {
+    text-decoration: none;
+    margin-left: 25px;
+    color: white;
+    border-radius: 25px;
+}
+nav a:hover {
+    color: brown;
+    background-color: white;
+    padding: 10px;
+    margin-left: 5px;
+}
+.thumbnail {
+    width: 960px;
+    height: 400px;
+    background-image: url(media/gambar.jpg);
+    background-size: cover;
+    margin: auto;
+    border-top: brown solid;
+    border-bottom: brown solid;
+}
+.main {
+    width: 580px;
+    padding: 20px;
+    box-sizing: border-box;
+    font-size: 14px;
+    line-height: 25px;
+    float: left;
+}
+.writer {
+    margin-top: -20px;
+}
+.writer p {
+    font-size: 11px;
+}
+.writer p a {
+    text-decoration: none;
+    color: brown;
+}
+.sidebar {
+    margin-top: 30px;
+    margin-right: 20px;
+    width: 300px;
+    padding: 20px;
+    float: right;
+    border: 1px rgb(138, 108, 108) solid;
+    border-radius: 5px;
+}
+footer {
+    text-align: center;
+    background-color: brown;
+    color: white;
+    padding: 10px;
+}
+.sidebar h3 {
+    font-weight: bold;
+    color: grey;
+}
+.sidebar img {
+    width: 50px;
+    position: 100px 0;
+    border-radius: 5px;
+    margin-right: 10px;
+    float: left;
+}
+.sidebar p {
+    line-height: 20px;
+}
+/*clear fix*/
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+.cf {
+    *zoom: 1;
+}
