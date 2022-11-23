@@ -1,0 +1,114 @@
+*{
+    box-sizing: border-box;
+}
+.row::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+[class*="col-"]{
+    float: left;
+    padding: 10px;
+}
+
+/*Grid system*/
+.col-1{width: 8.33%;}
+.col-2{width: 16.66%;}
+.col-3{width: 25%;}
+.col-4{width: 33.33%;}
+.col-5{width: 41.66%;}
+.col-6{width: 50%;}
+.col-7{width: 58.33%;}
+.col-8{width: 66.66%;}
+.col-9{width: 75%;}
+.col-10{width: 83.33%;}
+.col-11{width: 91.66;}
+.col-12{width: 100%;}
+
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.nav-container{
+    border: 1px solid orange;
+    box-sizing: inherit;
+}
+.nav{
+    margin: auto;
+}
+.nav ul li img{
+    width: 40.39px;
+}
+.nav ul{
+    list-style-type: none;
+}
+.nav ul a{
+    text-decoration: none;
+}
+.nav ul li{
+    border-radius: 5px;
+    color: black;
+    font-size: 16px;
+    display: inline-block;
+    width: 100px;
+    height: 50px;
+    margin-right: 30px;
+    padding: 5px;
+    text-align: center;
+    transition: 0.1s;
+}
+.nav ul li:hover{
+    background-color: orange;
+    color: black;
+}
+.todolist{
+    margin-top: 20px;
+    margin-left: 30px;
+    width: 300px;
+    height: 350px;
+    background-color: white;
+    border: 1px solid salmon;
+    border-radius: 15px;
+    transition: 0.5s;
+}
+.todolist:hover{
+    transform: scale(1.1,1.1);
+}
+.list-subject{
+    border: 1px solid red;
+    font-size: 24px;
+    margin-right: 5px;
+    /*
+    height: 50px;
+    width: 100px;
+    */
+}
+.edit-list{
+    border: 1px solid red;
+    height: 50px ;
+    float: right;
+}
+/*
+.list-header{
+    height: 80px;
+    background-color: salmon;
+    border-radius: 18px;
+    margin: 5px;
+    padding: 10px;
+}
+
+.input-text-judul, .input-text-content{
+    transition: 0.5s;
+}
+.input-text-judul:hover, .input-text-content:hover{
+    transform: scale(1.2,1.2);
+}
+*/
+.list-content{
+    height: 200px;
+    width: 265px;
+    border: 1px solid red;
+    margin: 5px;
+    margin-top: 10px;
+    border-radius: 18px;
+    padding: 10px;
+}

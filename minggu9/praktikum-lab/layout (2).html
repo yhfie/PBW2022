@@ -1,0 +1,66 @@
+<html>
+<head>
+    <title>Grid</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/layout-style.css">
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        header{
+            padding: 25px;
+            border: 1px solid red;
+        }
+        .row::after{
+            content: "";
+            clear: both;
+            display: table;
+        }
+        [class*="col-"]{
+            float: left;
+            padding: 10px;
+            border: 1px solid red;
+        }
+        .col-1{width: 8.33%;}
+        .col-2{width: 16.66%;}
+        .col-3{width: 25%;}
+        .col-4{width: 33.33%;}
+        .col-5{width: 41.66%;}
+        .col-6{width: 50%;}
+        .col-7{width: 58.33%;}
+        .col-8{width: 66.66%;}
+        .col-9{width: 75%;}
+        .col-10{width: 83.33%;}
+        .col-11{width: 91.66;}
+        .col-12{width: 100%;}
+    </style>
+</head>
+<body>
+    <header>
+        <h2>Judul Halaman /  Header</h2>
+    </header>
+    <main class="row">
+        <nav class="col-12">
+            <h4>Daftar Isi</h4>
+            <ul>
+                <li><a href="#">Menu 1</a></li>
+                <li><a href="#">Menu 2</a></li>
+            </ul>
+        </nav>
+        <article class="col-12">
+            <h4>Judul Isi</h4>
+            <p>
+                <img src="media/Desert.jpg" alt="gambar" class="col-3" style="margin: 0 10px;">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus saepe ipsam, velit reiciendis in perspiciatis repellendus magni autem suscipit, pariatur nihil, fugiat provident itaque est qui nostrum exercitationem labore aspernatur!
+            </p>
+            <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore ipsa nihil et? Consequuntur possimus atque nemo. Placeat cumque delectus enim, tenetur alias natus dignissimos explicabo reprehenderit deserunt iure quo quasi nostrum, repellendus atque ipsum vel expedita, facere maxime aliquam! Reiciendis molestias veritatis, voluptas deleniti nulla consequatur cumque incidunt fuga sit iure, corporis laudantium illo, praesentium nostrum. Placeat quasi quam ducimus porro dolor a, repellendus sit saepe vel perferendis quibusdam, veniam recusandae dolorem libero veritatis atque!
+            </p>
+        </article>
+    </main>
+    <footer class="col-12">
+        Copyright &copy; PBW2022
+    </footer>
+</body>
+</html>
