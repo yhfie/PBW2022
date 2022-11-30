@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dialog confirm</title>
+</head>
+<body>
+    <script>
+        var yakin = confirm("Apakah kamu yakin akan mengunjungi YouTube?");
+
+        if(yakin){
+            window.location = "http://youtube.com";
+        }
+        else{
+            document.write("Kamu memilih untuk di sini saja.");
+        }
+    </script>
+</body>
+</html>
