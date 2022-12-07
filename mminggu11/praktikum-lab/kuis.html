@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>javascript 2</title>
+</head>
+<body>
+    <h3>Daftar Nama HMTI</h3>
+
+    <form onsubmit="apl.addData" action="javascript:void(0);" method="post">
+        <input type="text" placeholder="Inputkan nama">
+        <input type="submit" value="+">
+    </form>
+
+    <div id="counter">
+        <!--Dinamis (Javascript)-->
+    </div>
+
+    <table border="1">
+        <thead>
+            <tr>
+                <td>Daftar Nama HMTI 2023</td>
+            </tr>    
+        </thead>
+
+        <tbody id="daftarNama">
+            <!--Dinamis (Javascript)-->
+        </tbody>
+    </table>
+
+    <script>
+        var apl = new function(){
+            this.el = document.getElementById('daftarNama');
+            this.mhs = ['Jamal', 'Johnny'];
+            
+            this.barisAll = function(){
+                var data = '';
+
+                if(this.mhs.length > 0){
+                    for(i=0; i<this.mhs.length; i++){
+                        data += '<tr>';
+                        data += '<td>'+this.mhs[i]+'</td>';
+                        data += '</tr>';
+                    }
+                }
+                return this.el.innerHTML = data;
+            }
+
+            this.count = function(data){
+                var el = document.getElementById('counter');
+                if(data){
+                    el.innerHTML = 'Jumlah: '+data+' '+'Mahasiswa';
+                }
+                else{
+                    el.innerHTML = 'Data kosong';
+                }
+            }
+
+            this.count = function(){
+                var el = document.getElementById()
+            }
+        }
+        apl.barisAll();
+    </script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array hapus tertentu</title>
+</head>
+<body>
+    <script>
+        var products = ["Senter", "Radio", "Antena", "Obeng", "Televisi", "Komputer"];
+
+        document.write(products);
+        products.splice(2,3); //(posisi index, jumlah data)
+        document.write("<br>");
+        document.write(products);
+        document.write("<br>");
+        products[0] = "Pompa Air";
+        document.write(products);
+    </script>
+</body>
+</html>
